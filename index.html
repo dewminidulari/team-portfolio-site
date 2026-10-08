@@ -1,34 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Team Portfolio | Full-Stack Lab 03</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/header-footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamCode - Project</title>
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="logo">
-      <a href="#">Team Portfolio site</a>
-    </div>
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    
+    <header>
+        <div class="logo">TeamCode</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <main>
-    <!-- MEMBER 1: PAGE CONTENT (sections) goes here -->
-  </main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>We build things, <span>with</span></h1>
+        <p>A four-member team learning Full-Stack Software Development with Git & GitHub collaboration.</p>
+        <button class="btn">Meet the Team</button>
+    </section>
 
-  <!-- MEMBER 4: FOOTER goes here -->
+    <!-- About the Project Section -->
+    <section class="about" id="about">
+        <h2>About the Project</h2>
+        <div class="about-cards">
+            <div class="about-card">
+                <h3>HTML</h3>
+                <p>Semantic structure for the whole page.</p>
+            </div>
+            <div class="about-card">
+                <h3>CSS</h3>
+                <p>Responsive layout, colours and dark mode.</p>
+            </div>
+            <div class="about-card">
+                <h3>JavaScript</h3>
+                <p>Interactivity: menu, theme, form checks.</p>
+            </div>
+        </div>
+    </section>
 
-  <script src="js/script.js"></script>
+    <!-- Our Team Section -->
+    <section class="team" id="team">
+        <h2>Our Team</h2>
+        <div class="team-cards">
+            <div class="team-card">
+                <div class="avatar">M1</div>
+                <h3>Member 1</h3>
+                <p>HTML Developer</p>
+            </div>
+            <div class="team-card">
+                <div class="avatar">M2</div>
+                <h3>Member 2</h3>
+                <p>CSS Developer</p>
+            </div>
+            <div class="team-card">
+                <div class="avatar">M3</div>
+                <h3>Member 3</h3>
+                <p>JavaScript Developer</p>
+            </div>
+            <div class="team-card">
+                <div class="avatar">M4</div>
+                <h3>Member 4</h3>
+                <p>Header & Footer Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); document.querySelector('.success-message').style.display='block';">
+            
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Write your message" required></textarea>
+            </div>
+
+            <!-- This green success message is shown in your screenshot -->
+            <p class="success-message">Thanks BBC_Adaption! Your message was sent.</p>
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 TeamCode. All rights reserved.</p>
+        <p>COSC 32133 / BECS 32263 University of Kelaniya</p>
+        <p><a href="#home">Back to top ↑</a></p>
+    </footer>
+
 </body>
 </html>
