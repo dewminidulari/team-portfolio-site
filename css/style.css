@@ -1,1 +1,344 @@
 /* MEMBER 2: global styles, layout, colours, dark mode */
+
+
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header / Navbar */
+        header {
+            background-color: #5a2ea6;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        nav a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #f8f5fd;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #5a2ea6;
+        }
+
+        .hero p {
+            color: #666;
+            font-size: 0.95rem;
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+        }
+
+        .btn {
+            background-color: #5a2ea6;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #462181;
+        }
+
+        /* Section Titles */
+        h2 {
+            text-align: center;
+            color: #5a2ea6;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 20px;
+            background-color: white;
+        }
+
+        .about-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 30px 20px;
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .about-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .about-card p {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        /* Team Section */
+        .team {
+            background-color: #f8f5fd;
+            padding: 60px 20px;
+        }
+
+        .team-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .team-card {
+            background-color: white;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 30px 20px;
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .avatar {
+            width: 60px;
+            height: 60px;
+            background-color: #5a2ea6;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0 auto 15px auto;
+        }
+
+        .team-card h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            color: #222;
+        }
+
+        .team-card p {
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 60px 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #5a2ea6;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .success-message {
+            color: #28a745;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            display: none; /* Hidden by default */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1e29;
+            color: #a0a5b1;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.8rem;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        footer a {
+            color: #a0a5b1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-mode .hero,
+body.dark-mode .team {
+    background-color: #202020;
+}
+
+body.dark-mode .about,
+body.dark-mode .contact {
+    background-color: #121212;
+}
+
+body.dark-mode .about-card,
+body.dark-mode .team-card {
+    background-color: #252525;
+    border-color: #444;
+}
+
+body.dark-mode .hero h1,
+body.dark-mode .about-card h3,
+body.dark-mode .team-card h3,
+body.dark-mode .form-group label {
+    color: #f1f1f1;
+}
+
+body.dark-mode .hero p,
+body.dark-mode .about-card p,
+body.dark-mode .team-card p {
+    color: #cccccc;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: #252525;
+    color: white;
+    border-color: #555;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin-left: 10px;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .about,
+    .team,
+    .contact {
+        padding: 40px 15px;
+    }
+
+    .about-card,
+    .team-card {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 12px;
+    }
+
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
